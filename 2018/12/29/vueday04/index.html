@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="vue day04vue-resource的使用使用方法:  在vue.js文件后引入 &amp;lt;script src=&amp;quot;./lib/vue-2.4.0.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;   &amp;lt;script src=&amp;quot;./lib/vue-resource-1.3.4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;  当引入完成文件后, 在vue">
 <meta name="keywords" content="web 前端 vue node js h5c3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://wushuzhen.github.io/2018/12/25/hello-world/index.html">
+<meta property="og:title" content="老吴的个人博客">
+<meta property="og:url" content="http://wushuzhen.github.io/2018/12/29/vueday04/index.html">
 <meta property="og:site_name" content="老吴的个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="vue day04vue-resource的使用使用方法:  在vue.js文件后引入 &amp;lt;script src=&amp;quot;./lib/vue-2.4.0.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;   &amp;lt;script src=&amp;quot;./lib/vue-resource-1.3.4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;  当引入完成文件后, 在vue">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-25T12:37:57.002Z">
+<meta property="og:image" content="https://cn.vuejs.org/images/transition.png">
+<meta property="og:updated_time" content="2018-12-23T10:44:14.887Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="老吴的个人博客">
+<meta name="twitter:description" content="vue day04vue-resource的使用使用方法:  在vue.js文件后引入 &amp;lt;script src=&amp;quot;./lib/vue-2.4.0.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;   &amp;lt;script src=&amp;quot;./lib/vue-resource-1.3.4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;  当引入完成文件后, 在vue">
+<meta name="twitter:image" content="https://cn.vuejs.org/images/transition.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://wushuzhen.github.io/2018/12/25/hello-world/">
+  <link rel="canonical" href="http://wushuzhen.github.io/2018/12/29/vueday04/">
 
 
 
 
 
-  <title>Hello World | 老吴的个人博客</title>
+  <title> | 老吴的个人博客</title>
   
 
 
@@ -233,7 +235,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wushuzhen.github.io/2018/12/25/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://wushuzhen.github.io/2018/12/29/vueday04/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="老吴">
@@ -250,7 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -262,8 +264,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-25T20:37:57+08:00">
-                2018-12-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-29T08:40:38+08:00">
+                2018-12-29
               </time>
             
 
@@ -300,16 +302,111 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="vue-day04"><a href="#vue-day04" class="headerlink" title="vue day04"></a>vue day04</h2><h3 id="vue-resource的使用"><a href="#vue-resource的使用" class="headerlink" title="vue-resource的使用"></a>vue-resource的使用</h3><p>使用方法:</p>
+<ol>
+<li><p>在vue.js文件后引入</p>
+<pre><code>&lt;script src=&quot;./lib/vue-2.4.0.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;./lib/vue-resource-1.3.4.js&quot;&gt;&lt;/script&gt;
+</code></pre></li>
+<li><p>当引入完成文件后, 在vue对象中就会有一个属性: <code>$http</code></p>
+<p> 发送get请求:</p>
+<p> 参数1: URL<br> 参数2: 配置对象</p>
+<p> 配置对象中可以设置一个params属性, 也是一个对象, 用于设置get请求的query参数</p>
+<pre><code>vm.$http.get(&apos;url&apos;, {}).then(result =&gt; {
+    // 请求成功的结果
+})
+</code></pre><p> 发送post请求:</p>
+<p> 参数1: URL<br> 参数2: 表单数据<br> 参数3: 配置对象</p>
+<p> 一般使用post请求时, 配置对象中最好开启<code>emulateJSON: true</code>, 该配置会将表单数据以传统表单格式提交: <code>application/x-www-form-urlencoded</code>的 <code>Content-Type</code></p>
+<pre><code>vm.$http.post(&apos;url&apos;, {name: &apos;zs&apos;}, {emulateJSON: true}).then(result =&gt; {
+    // 请求成功的结果
+})
+</code></pre></li>
+<li><p>全局配置</p>
+<p> 由于在项目开发中, 请求的api根路径一般都是相同的, 而且为了便于后期修改, 需要将请求的根路径进行全局配置:</p>
+<pre><code>Vue.http.options.root = &apos;/root&apos;
+</code></pre><p> <strong>注意: 如果配置了全局的根路径, 想让其生效, 发送请求时URL必须是相对路径, 例如: <code>vm.$http.get(&#39;url&#39;)</code>, 而不是 <code>vm.$http.get(&#39;/url&#39;)</code></strong></p>
+<p> 由于在项目开发中, 每次提交表单数据都需要使用传统表单提交, 所以需要将<code>emulateJSON</code>选项全局开启:</p>
+<pre><code>Vue.http.options.emulateJSON = true
+</code></pre><p> 当开启了全局的emulateJSON选项后, 以后发送post请求, 第三个参数就不需要再配置<code>emulateJSON</code>选项了</p>
+</li>
+</ol>
+<h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><p><img src="https://cn.vuejs.org/images/transition.png" alt="官网过渡动画流程图"></p>
+<p>上图描述了在vue中使用过渡类名完成动画的几个阶段, 其中涉及到6个类名:</p>
+<ol>
+<li><p>v-enter</p>
+<p> 设置元素执行入场动画前的样式</p>
+</li>
+<li><p>v-enter-to</p>
+<p> 设置元素执行入场动画完毕后的样式</p>
+</li>
+<li><p>v-leave</p>
+<p> 设置元素执行离场动画前的样式</p>
+</li>
+<li><p>v-leave-to</p>
+<p> 设置元素执行离场动画完毕后的样式</p>
+</li>
+<li><p>v-enter-active</p>
+<p> 设置元素在执行入场动画时的样式</p>
+</li>
+<li><p>v-leave-active</p>
+<p> 设置元素在执行离场动画时的样式</p>
+</li>
+</ol>
+<p>使用动画的步骤:</p>
+<ol>
+<li><p>先在需要加动画的元素(必须得是单元素)外, 包裹一个<code>transition</code>标签, 是由Vue提供的组件</p>
+<pre><code>&lt;transition&gt;
+  &lt;h1 v-if=&quot;flag&quot;&gt;社会毒瘤谢俊&lt;/h1&gt;
+&lt;/transition&gt;
+</code></pre></li>
+<li><p>添加类样式, 设置动画的过渡属性</p>
+<pre><code>.v-enter,
+.v-leave-to {
+  opacity: 0;
+  transform: translateX(200px)
+}
 
+.v-enter-active, 
+.v-leave-active {
+  transition: all 0.5s ease;
+}
+</code></pre></li>
+</ol>
+<p>如果想书写样式时, 不使用默认的v-开头, 可以在transition标签中声明name属性即可, 这个name属性就是类样式的前缀</p>
+<p>用于多个动画场景, 例如: p标签需要平移动画, h1标签需要淡入淡出动画, 为了避免类名冲突, 最好自定义前缀</p>
+<pre><code>&lt;transition name=&quot;xj&quot;&gt;
+  &lt;h1 v-if=&quot;flag&quot;&gt;社会毒瘤谢俊&lt;/h1&gt;
+&lt;/transition&gt;
+</code></pre><p>类样式前缀也要同时修改:</p>
+<pre><code>.xj-enter,
+.xj-leave-to {
+  opacity: 0;
+  transform: translateX(200px)
+}
+
+.xj-enter-active, 
+.xj-leave-active {
+  transition: all 0.5s ease;
+}
+</code></pre><h3 id="列表动画"><a href="#列表动画" class="headerlink" title="列表动画"></a>列表动画</h3><p>不同于单元素动画, 如果是使用v-for循环渲染出来的列表, 需要使用 <code>transition-group</code> 标签包裹</p>
+<pre><code>&lt;transition-group&gt;
+    &lt;li v-for=&quot;(item, i) in list&quot; :key=&quot;item.id&quot; @click=&quot;del(i)&quot;&gt;
+      {{item.id}} --- {{item.name}}
+    &lt;/li&gt;
+&lt;/transition-group&gt;
+</code></pre><p>其他地方同上, 也需要设置过渡的类样式</p>
+<pre><code>.v-enter,
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(50px)
+}
+
+.v-enter-active, 
+.v-leave-active {
+  transition: all 0.5s ease;
+}
+</code></pre>
       
     </div>
     
@@ -333,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/25/hexo_deploy/" rel="next" title="使用hexo部署一个博客服务器">
-                <i class="fa fa-chevron-left"></i> 使用hexo部署一个博客服务器
+              <a href="/2018/12/29/vueday01/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -343,8 +440,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/25/frontend22/" rel="prev" title="frontend22">
-                frontend22 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/29/vueday07/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -459,7 +556,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-day04"><span class="nav-number">1.</span> <span class="nav-text">vue day04</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-resource的使用"><span class="nav-number">1.1.</span> <span class="nav-text">vue-resource的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动画"><span class="nav-number">1.2.</span> <span class="nav-text">动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表动画"><span class="nav-number">1.3.</span> <span class="nav-text">列表动画</span></a></li></ol></li></ol></div>
             
 
           </div>

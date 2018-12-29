@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="vue day03过滤器 用于 v-bind 和 插值表达式做最后输出前的简单文本处理, 只能用于v-bind和插值表达式  过滤器不会修改原数据, 只是在输出前做一道处理而已, 不能在过滤器中做太复杂的业务逻辑处理   定义过滤器有两种方式:  全局过滤器  在所有vm实例中都可以使用  在Vue对象中有一个filter方法用于定义全局过滤器  参数1: 过滤器的名称  参数2: 过滤器的回调函">
 <meta name="keywords" content="web 前端 vue node js h5c3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://wushuzhen.github.io/2018/12/25/hello-world/index.html">
+<meta property="og:title" content="老吴的个人博客">
+<meta property="og:url" content="http://wushuzhen.github.io/2018/12/29/vueday03/index.html">
 <meta property="og:site_name" content="老吴的个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="vue day03过滤器 用于 v-bind 和 插值表达式做最后输出前的简单文本处理, 只能用于v-bind和插值表达式  过滤器不会修改原数据, 只是在输出前做一道处理而已, 不能在过滤器中做太复杂的业务逻辑处理   定义过滤器有两种方式:  全局过滤器  在所有vm实例中都可以使用  在Vue对象中有一个filter方法用于定义全局过滤器  参数1: 过滤器的名称  参数2: 过滤器的回调函">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-25T12:37:57.002Z">
+<meta property="og:updated_time" content="2018-12-22T10:12:55.503Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="老吴的个人博客">
+<meta name="twitter:description" content="vue day03过滤器 用于 v-bind 和 插值表达式做最后输出前的简单文本处理, 只能用于v-bind和插值表达式  过滤器不会修改原数据, 只是在输出前做一道处理而已, 不能在过滤器中做太复杂的业务逻辑处理   定义过滤器有两种方式:  全局过滤器  在所有vm实例中都可以使用  在Vue对象中有一个filter方法用于定义全局过滤器  参数1: 过滤器的名称  参数2: 过滤器的回调函">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://wushuzhen.github.io/2018/12/25/hello-world/">
+  <link rel="canonical" href="http://wushuzhen.github.io/2018/12/29/vueday03/">
 
 
 
 
 
-  <title>Hello World | 老吴的个人博客</title>
+  <title> | 老吴的个人博客</title>
   
 
 
@@ -233,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wushuzhen.github.io/2018/12/25/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://wushuzhen.github.io/2018/12/29/vueday03/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="老吴">
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-25T20:37:57+08:00">
-                2018-12-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-29T08:40:38+08:00">
+                2018-12-29
               </time>
             
 
@@ -300,15 +300,115 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="vue-day03"><a href="#vue-day03" class="headerlink" title="vue day03"></a>vue day03</h2><h3 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h3><ul>
+<li><p>用于 v-bind 和 插值表达式做最后输出前的简单文本处理, <strong>只能用于v-bind和插值表达式</strong></p>
+</li>
+<li><p>过滤器不会修改原数据, 只是在输出前做一道处理而已, 不能在过滤器中做太复杂的业务逻辑处理</p>
+</li>
+</ul>
+<p>定义过滤器有两种方式:</p>
+<ol>
+<li><p>全局过滤器</p>
+<p> 在所有vm实例中都可以使用</p>
+<p> 在Vue对象中有一个filter方法用于定义全局过滤器</p>
+<p> 参数1: 过滤器的名称</p>
+<p> 参数2: 过滤器的回调函数</p>
+<p> 回调函数中一定有一个参数, 是在使用过滤器时, 管道符左边的数据</p>
+<p> 回调函数的返回值就是过滤器处理的结果</p>
+<pre><code>Vue.filter(&apos;msgFormat&apos;, (content, unit = &quot;元&quot;) =&gt; {
+    return &apos;¥&apos; + content + unit
+})
+</code></pre><p> 使用方法(msg已定义在data中):</p>
+<pre><code>&lt;p&gt; {{ msg | msgFormat('美元') }} &lt;/p&gt;
+</code></pre></li>
+<li><p>私有过滤器</p>
+<p> 只能在当前vm实例中使用的过滤器, 在Vue构造函数的配置对象中的filters节点下, 和methods/data同级</p>
+<pre><code>let vm = new Vue({
+    el: &apos;#app&apos;,
+    data: {},
+    methods: {},
+    filters: {
+        msgFormat(content) {
+            // 这里就是私有过滤处理的区域
+            // content就是管道符左边的内容
+            // 需要将处理完毕的结果return出去
+            return content + &apos;~~~&apos;
+        }
+    }
+})
+</code></pre></li>
+</ol>
+<h3 id="按键修饰符"><a href="#按键修饰符" class="headerlink" title="按键修饰符"></a>按键修饰符</h3><p>如果需要在用户输入完内容, 按回车进行表单的提交, 或者数据添加等操作, 就需要给文本框绑定键盘事件</p>
+<p>同时还需要监听到用户输入回车键</p>
+<p>Vue提供了按键修饰符解决这个问题</p>
+<pre><code>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; v-model=&quot;name&quot; @keydown.enter=&quot;add&quot;&gt;
+</code></pre><p>预定义的内置按键修饰符:</p>
+<pre><code>.enter 回车
+.tab 
+.delete (捕获“删除”和“退格”键)
+.esc
+.space 空格
+.up
+.down
+.left
+.right
+</code></pre><p>如果需要用到其他按键, 可以直接使用 .keycode , 以上内置的按键修饰符也可以通过 .keycode来使用</p>
+<pre><code>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; v-model=&quot;name&quot; @keydown.13=&quot;add&quot;&gt;
+</code></pre><p>如果需要自定义其他按键修饰符别名, 可以通过 <code>Vue.config.keycodes.xxx = 111</code> 的方式来定义</p>
+<pre><code>// 可以使用 `v-on:keyup.f2`
+Vue.config.keyCodes.f2 = 113
+
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; v-model=&quot;name&quot; @keydown.f2=&quot;add&quot;&gt;
+</code></pre><h3 id="自定义指令-了解"><a href="#自定义指令-了解" class="headerlink" title="自定义指令(了解)"></a>自定义指令(了解)</h3><p>当Vue提供的内置指令无法满足某些需求的时候, 就需要自定义指令来解决问题了</p>
+<p>举官方文档中的案例:</p>
+<p>需求: 当页面加载时让某个文本框获取焦点, 通过自定义指令 <code>v-focus</code> 来完成</p>
+<ol>
+<li><p>全局指令</p>
+<p> 通过<code>Vue.directive()</code> 定义全局指令</p>
+<p> 参数1: 指令名, 不需要v-开头, 但是在使用时需要加上v-便于Vue编译模板时区分普通属性和指令</p>
+<p> 参数2: 指令的钩子函数(在特定阶段执行的函数)</p>
+<pre><code>Vue.directive(&apos;focus&apos;, {
+    bind(el) {
+        // 当指令被绑定到标签上时执行该函数, 只执行一次
+    },
+    inserted(el) {
+        // 当被绑定元素插入父节点时调用
+        // 形参el 就是该指令绑定的元素, 原生DOM对象
+        el.focus()
+    },
+    update(el) {
+        // 当DOM元素更新时调用
+    },
+    componentUpdated() {
+
+    },
+    unbind() {
+        // 只调用一次, 指令与元素解绑时调用
+    }
+})
+</code></pre> <input type="text" v-focus="">
+</li>
+<li><p>私有指令</p>
+<p> 只能在当前vm实例内部使用</p>
+<p> 在Vue构造函数的配置对象中directives节点下, 和data/methods同级</p>
+<pre><code>let vm = new Vue({
+    el: &apos;#app&apos;,
+    data: {},
+    methods: {},
+    filters: {},
+    directives: {
+        //focus: {
+        //    bind(){},
+        //    inserted() {}
+        //}
+        // 如果focus指令只需要在bind和update阶段做具体的操作,则可以简写为一个函数(全局指令也同理):
+        focus() {
+
+        }
+    }
+})
+</code></pre></li>
+</ol>
 
       
     </div>
@@ -333,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/25/hexo_deploy/" rel="next" title="使用hexo部署一个博客服务器">
-                <i class="fa fa-chevron-left"></i> 使用hexo部署一个博客服务器
+              <a href="/2018/12/29/vueday05/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -343,8 +443,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/25/frontend22/" rel="prev" title="frontend22">
-                frontend22 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/29/vueday02/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -459,7 +559,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-day03"><span class="nav-number">1.</span> <span class="nav-text">vue day03</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#过滤器"><span class="nav-number">1.1.</span> <span class="nav-text">过滤器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按键修饰符"><span class="nav-number">1.2.</span> <span class="nav-text">按键修饰符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义指令-了解"><span class="nav-number">1.3.</span> <span class="nav-text">自定义指令(了解)</span></a></li></ol></li></ol></div>
             
 
           </div>
